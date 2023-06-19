@@ -14,6 +14,7 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/terminal.svg').default,
     description: (
       <>
+        Simple Go CLI, available for Linux and MacOS, with multi architectures support.
       </>
     ),
   },
@@ -22,22 +23,16 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/sloth.svg').default,
     description: (
       <>
+        Can be used easily in tandem with the <a href="https://github.com/slok/sloth" target="_blank">Sloth</a> tool.
       </>
     ),
   },
   {
-    title: 'Multi architecture support for 🐧|🍎',
-    Svg: require('@site/static/img/linux.svg').default,
-    description: (
-      <>
-      </>
-    ),
-  },
-  {
-    title: 'Github Action (coming soon...)',
+    title: 'Github Action',
     Svg: require('@site/static/img/github.svg').default,
     description: (
        <>
+         Use it within your Github CI/CD flow using the <a href="https://github.com/tfadeyi/slotalk-installer" target="_blank">installer</a> github action.
        </>
     ),
     },

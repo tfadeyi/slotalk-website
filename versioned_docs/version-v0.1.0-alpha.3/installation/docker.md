@@ -1,39 +1,35 @@
 ---
-sidebar_position: 1
+sidebar_position: 3
 ---
 
-# Linux (x84_64)
+# Docker 🐋
 
-Install **slotalk** on linux (x84_64).
+You can run **slotalk** into your machine using `docker`.
+
+This method won't install the binary in the host machine per se, but it will run the binary in a container.
 
 ## Requirements
 
 To install the tool using this method you'll require:
 
-* cURL
-* tar
-* wget (optional)
+* Docker
 
 Present on your host machine.
 
-## Installation
+## Running slotalk with Nix
 
 Simply run, in your terminal:
 
 ```shell
-curl -s -L https://github.com/tfadeyi/slotalk/releases/latest/download/slotalk-linux-amd64.tar.gz | tar xzv
-# might require sudo
-mv slotalk-linux-amd64/slotalk /usr/local/bin
+docker run docker ghcr.io/tfadeyi/slotalk:latest
 ```
 
-This will install the latest slotalk binary under the path: `/usr/local/bin/slotalk`.
+This gives you an ephemeral way to run slotalk, so you can try out the tool without installing it.
 
-> You can install different versions by setting the tag to the target version: https://github.com/tfadeyi/slotalk/releases/download/v0.1.0-alpha.1/slotalk-linux-amd64.tar.gz
-
-## Verify Installation
+## Try it!
 
 ```shell
-slotalk --help
+docker run docker ghcr.io/tfadeyi/slotalk:latest --help
 ```
 
 The binary should return something similar to:
@@ -55,13 +51,4 @@ Flags:
       --log-level string   Only log messages with the given severity or above. One of: [none, debug, info, warn], errors will always be printed (default "info")
 
 Use "slotalk [command] --help" for more information about a command.
-```
-
-## Uninstall 😢
-
-To uninstall the tool you can simply delete the binary from the following directory.
-
-```shell
-# might require sudo
-rm /usr/local/bin/slotalk
 ```

@@ -1,18 +1,19 @@
 ---
-sidebar_position: 1
+sidebar_position: 4
 ---
 
-# Linux (x84_64)
+# Installer script
 
-Install **slotalk** on linux (x84_64).
+You can install slotalk using the installer script present in the repository.
+This will install the slotalk binary for your host machine OS and architecture (**linux and macOS**),
+under `~/.slotalk/bin` directory.
 
 ## Requirements
 
 To install the tool using this method you'll require:
 
-* cURL
 * tar
-* wget (optional)
+* cURL
 
 Present on your host machine.
 
@@ -21,14 +22,10 @@ Present on your host machine.
 Simply run, in your terminal:
 
 ```shell
-curl -s -L https://github.com/tfadeyi/slotalk/releases/latest/download/slotalk-linux-amd64.tar.gz | tar xzv
-# might require sudo
-mv slotalk-linux-amd64/slotalk /usr/local/bin
+curl -sfL https://raw.githubusercontent.com/tfadeyi/slotalk/main/install.sh | sh -
 ```
 
-This will install the latest slotalk binary under the path: `/usr/local/bin/slotalk`.
-
-> You can install different versions by setting the tag to the target version: https://github.com/tfadeyi/slotalk/releases/download/v0.1.0-alpha.1/slotalk-linux-amd64.tar.gz
+Then follow the instruction returned to the terminal.
 
 ## Verify Installation
 
@@ -55,13 +52,4 @@ Flags:
       --log-level string   Only log messages with the given severity or above. One of: [none, debug, info, warn], errors will always be printed (default "info")
 
 Use "slotalk [command] --help" for more information about a command.
-```
-
-## Uninstall 😢
-
-To uninstall the tool you can simply delete the binary from the following directory.
-
-```shell
-# might require sudo
-rm /usr/local/bin/slotalk
 ```

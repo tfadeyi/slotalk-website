@@ -12,6 +12,44 @@ function HomepageHeader() {
   return (
     <header className={clsx('hero', styles.heroBanner)}>
       <div className="container">
+          <div>
+              <a href="https://github.com/tfadeyi/sloth-simple-comments/nix" className="margin-right--sm">
+                  <img
+                  alt="nix-devshell"
+                  src="https://img.shields.io/badge/nix-devshell-blue?logo=NixOS&style=for-the-badge"
+                  className="inline-block"/>
+              </a>
+              <a href="https://github.com/tfadeyi/sloth-simple-comments/actions/workflows/ci.yml" className="margin-right--sm">
+                  <img
+                      alt="continuous-integration"
+                      src="https://img.shields.io/github/actions/workflow/status/tfadeyi/sloth-simple-comments/ci.yml?branch=main&style=for-the-badge"
+                      className="inline-block"/>
+              </a>
+              <a href="https://github.com/tfadeyi/sloth-simple-comments/blob/main/LICENSE" className="margin-right--sm">
+                  <img
+                      alt="license"
+                      src="https://img.shields.io/badge/License-MIT-yellowgreen.svg?style=for-the-badge"
+                      className="inline-block"/>
+              </a>
+              <a href="https://github.com/tfadeyi/sloth-simple-comments" className="margin-right--sm">
+                  <img
+                      alt="language"
+                      src="https://img.shields.io/github/go-mod/go-version/tfadeyi/sloth-simple-comments?style=for-the-badge"
+                      className="inline-block"/>
+              </a>
+              <a href="https://github.com/tfadeyi/sloth-simple-comments/releases" className="margin-right--sm">
+                  <img
+                      alt="release"
+                      src="https://img.shields.io/github/v/release/tfadeyi/sloth-simple-comments?color=green&style=for-the-badge"
+                      className="inline-block"/>
+              </a>
+              <a href="https://goreportcard.com/report/github.com/tfadeyi/sloth-simple-comments">
+                  <img
+                      alt="go-report"
+                      src="https://goreportcard.com/badge/github.com/tfadeyi/sloth-simple-comments?style=for-the-badge"
+                      className="inline-block"/>
+              </a>
+          </div>
         <h1 className="hero__title">{siteConfig.title}</h1>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <div className={styles.buttons}>

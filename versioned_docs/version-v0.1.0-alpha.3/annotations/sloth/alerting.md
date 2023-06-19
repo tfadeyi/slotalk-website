@@ -83,3 +83,4 @@ The Alerting must be defined in the same comment group as where the was defined 
 |-------------|---------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------|
 | labels      | Labels are the Prometheus labels for the specific alert. For example can be useful to route the Page alert to specific Slack channel. | @sloth.alerting.ticket labels severity critical     |
 | annotations | Annotations are the Prometheus annotations for the specific alert.                                                                    | @sloth.alerting.ticket annotations tier application |
+

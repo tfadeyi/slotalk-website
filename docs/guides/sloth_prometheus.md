@@ -2,13 +2,14 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# Basic slotalk use case (sloth)
 
-Let's discover **Slotalk in less than 5 minutes**.
+The following guide shows how to use **slotalk** to generate Sloth SLO specifications, plus prometheus alert groups, for a simple application's metrics.
 
-## Getting Started
+## Prerequisites
 
-Get started by [**installing slotalk**](/docs/installation/go).
+* Slotalk
+* Sloth
 
 ## Add slotalk annotations to your codebase
 Add comments to your source code. See [**declarative comments**](/docs/annotations/sloth/service) for more info.
