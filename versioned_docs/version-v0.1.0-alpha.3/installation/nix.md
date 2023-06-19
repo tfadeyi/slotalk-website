@@ -1,39 +1,36 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 ---
 
-# Linux (x84_64)
+# Nix
 
-Install **slotalk** on linux (x84_64).
+You can run **slotalk** into your machine using `nix`.
+
+This method won't install the binary in the host machine per se, nix gives you an ephemeral way of running the binary
+but work is coming that will the tool available through `nixpkgs`.
 
 ## Requirements
 
 To install the tool using this method you'll require:
 
-* cURL
-* tar
-* wget (optional)
+* Nix 2.+
 
 Present on your host machine.
 
-## Installation
+## Running slotalk with Nix
 
 Simply run, in your terminal:
 
 ```shell
-curl -s -L https://github.com/tfadeyi/slotalk/releases/latest/download/slotalk-linux-amd64.tar.gz | tar xzv
-# might require sudo
-mv slotalk-linux-amd64/slotalk /usr/local/bin
+nix run github:tfadeyi/slotalk
 ```
 
-This will install the latest slotalk binary under the path: `/usr/local/bin/slotalk`.
+This gives you an ephemeral way to run slotalk, so you can try out the tool without installing it.
 
-> You can install different versions by setting the tag to the target version: https://github.com/tfadeyi/slotalk/releases/download/v0.1.0-alpha.1/slotalk-linux-amd64.tar.gz
-
-## Verify Installation
+## Try it!
 
 ```shell
-slotalk --help
+nix run github:tfadeyi/slotalk --help
 ```
 
 The binary should return something similar to:
@@ -55,13 +52,4 @@ Flags:
       --log-level string   Only log messages with the given severity or above. One of: [none, debug, info, warn], errors will always be printed (default "info")
 
 Use "slotalk [command] --help" for more information about a command.
-```
-
-## Uninstall 😢
-
-To uninstall the tool you can simply delete the binary from the following directory.
-
-```shell
-# might require sudo
-rm /usr/local/bin/slotalk
 ```

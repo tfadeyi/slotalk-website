@@ -74,7 +74,7 @@ const config = {
           },
           {to: '/blog', label: '📰Blog', position: 'right'},
           {
-            href: 'https://github.com/tfadeyi/slotalk-website',
+            href: 'https://github.com/tfadeyi/slotalk',
             label: 'GitHub',
             position: 'right',
           },

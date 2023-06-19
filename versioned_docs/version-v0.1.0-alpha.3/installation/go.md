@@ -2,17 +2,15 @@
 sidebar_position: 1
 ---
 
-# Linux (x84_64)
+# Go Install
 
-Install **slotalk** on linux (x84_64).
+You can install **slotalk** into your machine using the `go install` command.
 
 ## Requirements
 
 To install the tool using this method you'll require:
 
-* cURL
-* tar
-* wget (optional)
+* Go 1.18+
 
 Present on your host machine.
 
@@ -21,14 +19,13 @@ Present on your host machine.
 Simply run, in your terminal:
 
 ```shell
-curl -s -L https://github.com/tfadeyi/slotalk/releases/latest/download/slotalk-linux-amd64.tar.gz | tar xzv
-# might require sudo
-mv slotalk-linux-amd64/slotalk /usr/local/bin
+# install the latest version of slotalk
+go install github.com/tfadeyi/slotalk@latest
 ```
 
-This will install the latest slotalk binary under the path: `/usr/local/bin/slotalk`.
+This will install the latest slotalk binary under the path: `$(go env GOPATH)/bin/slotalk`.
 
-> You can install different versions by setting the tag to the target version: https://github.com/tfadeyi/slotalk/releases/download/v0.1.0-alpha.1/slotalk-linux-amd64.tar.gz
+> You can install different versions by setting the tag to the target version: go install github.com/tfadeyi/slotalk@v0.1.0-alpha.2 
 
 ## Verify Installation
 
@@ -62,6 +59,5 @@ Use "slotalk [command] --help" for more information about a command.
 To uninstall the tool you can simply delete the binary from the following directory.
 
 ```shell
-# might require sudo
-rm /usr/local/bin/slotalk
+rm $(go env GOPATH)/bin/slotalk
 ```

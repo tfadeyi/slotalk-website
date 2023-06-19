@@ -28,7 +28,7 @@ mv slotalk-darwin-arm64/slotalk /usr/local/bin
 
 This will install the latest slotalk binary under the path: `/usr/local/bin/slotalk`.
 
-> You can install different versions by setting the tag to the target version: https://github.com/tfadeyi/slotalk/releases/v0.1.0-alpha.1/download/slotalk-darwin-arm64.tar.gz
+> You can install different versions by setting the tag to the target version: https://github.com/tfadeyi/slotalk/releases/download/v0.1.0-alpha.1/slotalk-darwin-arm64.tar.gz
 
 ## Verify Installation
 

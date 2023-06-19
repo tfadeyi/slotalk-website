@@ -6,12 +6,6 @@ sidebar_position: 3
 
 Defines the SLI being used by an SLO.
 
-:::tip Note
-
-The SLI must be defined in the same comment group as where the was defined SLO.
-
-:::
-
 ```go
 // @sloth.sli error_query sum(rate(tenant_failed_login_operations_total{client="chat-gpt"}[{{.window}}])) OR on() vector(0)
 // @sloth.sli total_query sum(rate(tenant_login_operations_total{client="chat-gpt"}[{{.window}}]))
@@ -32,6 +26,20 @@ slos:
         error_query: sum(rate(tenant_failed_login_operations_total{client="chat-gpt"}[{{.window}}])) OR on() vector(0)
         total_query: sum(rate(tenant_login_operations_total{client="chat-gpt"}[{{.window}}]))
 ```
+
+:::caution Caution
+
+The SLI must be defined in the same comment group as where the was defined SLO.
+
+```go
+// @sloth.slo name chat-gpt-availability
+// @sloth.slo objective 95.0
+// @sloth.sli error_query sum(rate(tenant_failed_login_operations_total{client="chat-gpt"}[{{.window}}])) OR on() vector(0)
+// @sloth.sli total_query sum(rate(tenant_login_operations_total{client="chat-gpt"}[{{.window}}]))
+// @sloth.slo description 95% of logins to the chat-gpt app should be successful.
+```
+
+:::
 
 ## Table of Annotations
 | Annotation        | Description                                                                                                                                                                                                        | Example                                                                                                |

@@ -7,6 +7,10 @@ export default function HomepageAbout(): JSX.Element {
       <div className="container">
         <div className="row">
           <div className="container text--center padding-horiz--md">
+              <p>
+                  <img src="https://raw.githubusercontent.com/tfadeyi/slotalk/main/static/images/simple-usage-example.gif"/>
+              </p>
+
               <h3 className="hero__subtitle">What is Slotalk?</h3>
               <p>
                   <span className="text--primary">Slotalk</span> is an open source CLI tool that allows developers to embed Sloth SLO/SLI specifications
