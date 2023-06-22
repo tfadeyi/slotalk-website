@@ -7,7 +7,7 @@ sidebar_position: 2
 The `help` command will return the list of available CLI commands.
 
 ```shell
-slotalk help
+sloscribe help
 ```
 
 Output:
@@ -16,7 +16,7 @@ Output:
 Generate Sloth SLO/SLI definitions from code annotations.
 
 Usage:
-  slotalk [command]
+  sloscribe [command]
 
 Available Commands:
   completion  Generate the autocompletion script for the specified shell
@@ -25,17 +25,17 @@ Available Commands:
   version     Returns the binary build information.
 
 Flags:
-  -h, --help               help for slotalk
+  -h, --help               help for sloscribe
       --log-level string   Only log messages with the given severity or above. One of: [none, debug, info, warn], errors will always be printed (default "info")
 
-Use "slotalk [command] --help" for more information about a command.
+Use "sloscribe [command] --help" for more information about a command.
 ```
 
 To view information about a specific command the `--help` flag can be passed, this will return
 the list child commands and flags.
 
 ```shell
-slotalk version --help
+sloscribe version --help
 ```
 
 Output:
@@ -44,7 +44,7 @@ Output:
 Returns the binary build information.
 
 Usage:
-  slotalk version [flags]
+  sloscribe version [flags]
 
 Flags:
   -h, --help   help for version

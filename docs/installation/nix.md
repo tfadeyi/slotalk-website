@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Nix
 
-You can run **slotalk** into your machine using `nix`.
+You can run **sloscribe** into your machine using `nix`.
 
 This method won't install the binary in the host machine per se, nix gives you an ephemeral way of running the binary
 but work is coming that will the tool available through `nixpkgs`.
@@ -17,20 +17,20 @@ To install the tool using this method you'll require:
 
 Present on your host machine.
 
-## Running slotalk with Nix
+## Running sloscribe with Nix
 
 Simply run, in your terminal:
 
 ```shell
-nix run github:tfadeyi/slotalk
+nix run github:slosive/sloscribe
 ```
 
-This gives you an ephemeral way to run slotalk, so you can try out the tool without installing it.
+This gives you an ephemeral way to run sloscribe, so you can try out the tool without installing it.
 
 ## Try it!
 
 ```shell
-nix run github:tfadeyi/slotalk --help
+nix run github:slosive/sloscribe --help
 ```
 
 The binary should return something similar to:
@@ -39,7 +39,7 @@ The binary should return something similar to:
 Generate Sloth SLO/SLI definitions from code annotations.
 
 Usage:
-  slotalk [command]
+  sloscribe [command]
 
 Available Commands:
   completion  Generate the autocompletion script for the specified shell
@@ -48,8 +48,8 @@ Available Commands:
   version     Returns the binary build information.
 
 Flags:
-  -h, --help               help for slotalk
+  -h, --help               help for sloscribe
       --log-level string   Only log messages with the given severity or above. One of: [none, debug, info, warn], errors will always be printed (default "info")
 
-Use "slotalk [command] --help" for more information about a command.
+Use "sloscribe [command] --help" for more information about a command.
 ```

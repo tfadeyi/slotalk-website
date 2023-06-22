@@ -20,7 +20,7 @@ sidebar_position: 1
 * Improve documentation. ✅
 * Launch documentation website. ✅
 * Update the service flag to handle multiple services as input. ✅
-* Add the `--specification` flag to allow slotalk to parse for different specifications other than Sloth. ✅
+* Add the `--specification` flag to allow sloscribe to parse for different specifications other than Sloth. ✅
 * Add support to parse `sloth` annotations and return Sloth kubernetes objects by passing `sloth-k8s` the `--specification` flag. ✅
 
 ## v0.1.0-alpha.4

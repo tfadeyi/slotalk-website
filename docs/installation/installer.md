@@ -4,9 +4,9 @@ sidebar_position: 4
 
 # Installer script
 
-You can install slotalk using the installer script present in the repository.
-This will install the slotalk binary for your host machine OS and architecture (**linux and macOS**),
-under `~/.slotalk/bin` directory.
+You can install sloscribe using the installer script present in the repository.
+This will install the sloscribe binary for your host machine OS and architecture (**linux and macOS**),
+under `~/.sloscribe/bin` directory.
 
 ## Requirements
 
@@ -22,7 +22,7 @@ Present on your host machine.
 Simply run, in your terminal:
 
 ```shell
-curl -sfL https://raw.githubusercontent.com/tfadeyi/slotalk/main/install.sh | sh -
+curl -sfL https://raw.githubusercontent.com/slosive/sloscribe/main/install.sh | sh -
 ```
 
 Then follow the instruction returned to the terminal.
@@ -30,7 +30,7 @@ Then follow the instruction returned to the terminal.
 ## Verify Installation
 
 ```shell
-slotalk --help
+sloscribe --help
 ```
 
 The binary should return something similar to:
@@ -39,7 +39,7 @@ The binary should return something similar to:
 Generate Sloth SLO/SLI definitions from code annotations.
 
 Usage:
-  slotalk [command]
+  sloscribe [command]
 
 Available Commands:
   completion  Generate the autocompletion script for the specified shell
@@ -48,8 +48,8 @@ Available Commands:
   version     Returns the binary build information.
 
 Flags:
-  -h, --help               help for slotalk
+  -h, --help               help for sloscribe
       --log-level string   Only log messages with the given severity or above. One of: [none, debug, info, warn], errors will always be printed (default "info")
 
-Use "slotalk [command] --help" for more information about a command.
+Use "sloscribe [command] --help" for more information about a command.
 ```
