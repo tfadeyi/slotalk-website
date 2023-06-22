@@ -6,7 +6,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Sloscribe',
+  title: 'SLOscribe',
   tagline: 'A Swaggo inspired tool to bring SLO/SLIs closer to Developers 🤞',
   favicon: 'img/favicon.ico',
 
@@ -64,7 +64,7 @@ const config = {
       // Replace with your project's social card
       image: 'img/sloscribe_banner.png',
       navbar: {
-        title: 'Sloscribe',
+        title: 'SLOscribe',
         items: [
           {
             type: 'docSidebar',
