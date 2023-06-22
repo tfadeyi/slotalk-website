@@ -13,7 +13,7 @@ Adds detail about the service that owns the SLOs being defined. The following is
 // @sloth labels environment staging
 ```
 
-Running **slotalk** with the above annotations will generate the following sloth specification:
+Running **sloscribe** with the above annotations will generate the following sloth specification:
 
 ```yaml
 version: prometheus/v1

@@ -4,7 +4,7 @@ sidebar_position: 5
 
 # MacOS (Apple Silicon)
 
-Install **slotalk** on macOS (apple silicon).
+Install **sloscribe** on macOS (apple silicon).
 
 ## Requirements
 
@@ -21,19 +21,19 @@ Present on your host machine.
 Simply run, in your terminal:
 
 ```shell
-curl -s -L https://github.com/tfadeyi/slotalk/releases/latest/download/slotalk-darwin-arm64.tar.gz | tar xzv
+curl -s -L https://github.com/slosive/sloscribe/releases/latest/download/sloscribe-darwin-arm64.tar.gz | tar xzv
 # might require sudo
-mv slotalk-darwin-arm64/slotalk /usr/local/bin
+mv sloscribe-darwin-arm64/sloscribe /usr/local/bin
 ```
 
-This will install the latest slotalk binary under the path: `/usr/local/bin/slotalk`.
+This will install the latest sloscribe binary under the path: `/usr/local/bin/sloscribe`.
 
-> You can install different versions by setting the tag to the target version: https://github.com/tfadeyi/slotalk/releases/download/v0.1.0-alpha.1/slotalk-darwin-arm64.tar.gz
+> You can install different versions by setting the tag to the target version: https://github.com/slosive/sloscribe/releases/download/v0.1.0-alpha.1/sloscribe-darwin-arm64.tar.gz
 
 ## Verify Installation
 
 ```shell
-slotalk --help
+sloscribe --help
 ```
 
 The binary should return something similar to:
@@ -42,7 +42,7 @@ The binary should return something similar to:
 Generate Sloth SLO/SLI definitions from code annotations.
 
 Usage:
-  slotalk [command]
+  sloscribe [command]
 
 Available Commands:
   completion  Generate the autocompletion script for the specified shell
@@ -51,10 +51,10 @@ Available Commands:
   version     Returns the binary build information.
 
 Flags:
-  -h, --help               help for slotalk
+  -h, --help               help for sloscribe
       --log-level string   Only log messages with the given severity or above. One of: [none, debug, info, warn], errors will always be printed (default "info")
 
-Use "slotalk [command] --help" for more information about a command.
+Use "sloscribe [command] --help" for more information about a command.
 ```
 
 ## Uninstall 😢
@@ -63,5 +63,5 @@ To uninstall the tool you can simply delete the binary from the following direct
 
 ```shell
 # might require sudo
-rm /usr/local/bin/slotalk
+rm /usr/local/bin/sloscribe
 ```

@@ -1,11 +1,11 @@
 ---
 slug: welcome
 title: Welcome
-authors: [tfadeyi]
-tags: [welcome, slotalk]
+authors: [slosive]
+tags: [welcome, sloscribe]
 ---
 
-Welcome to slotalk blog! This is a companion blog for the slotalk tool!🥳🥳🥳
+Welcome to sloscribe blog! This is a companion blog for the sloscribe tool!🥳🥳🥳
 
 **Keep up to date with project:**
 * new features!
@@ -14,6 +14,6 @@ Welcome to slotalk blog! This is a companion blog for the slotalk tool!🥳🥳�
 * and breaking changes too...
 
 
-![slotalk_banner](./slotalk_banner.png)
+![sloscribe_banner](./sloscribe_banner.png)
 
-Check out the project on [Github](https://github.com/tfadeyi/slotalk)!
+Check out the project on [Github](https://github.com/slosive/sloscribe)!

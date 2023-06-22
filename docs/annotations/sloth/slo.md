@@ -14,7 +14,7 @@ Defines the SLOs for a given service. The following is an example of what the in
 // @sloth.labels severity critical
 ```
 
-Running **slotalk** with the above annotations will generate the following sloth specification:
+Running **sloscribe** with the above annotations will generate the following sloth specification:
 
 ```yaml
 version: prometheus/v1

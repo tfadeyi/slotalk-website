@@ -32,7 +32,7 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/github.svg').default,
     description: (
        <>
-         Use it within your Github CI/CD flow using the <a href="https://github.com/tfadeyi/slotalk-installer" target="_blank">installer</a> github action.
+         Use it within your Github CI/CD flow using the <a href="https://github.com/slosive/sloscribe-installer" target="_blank">installer</a> github action.
        </>
     ),
     },

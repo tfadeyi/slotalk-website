@@ -13,7 +13,7 @@ Defines the alerting specification for a given SLO.
 // @sloth.alerting annotations tier preemptive
 ```
 
-Running **slotalk** will generate the following alerting sloth specification:
+Running **sloscribe** will generate the following alerting sloth specification:
 
 ```yaml
 version: prometheus/v1

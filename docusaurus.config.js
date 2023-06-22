@@ -6,20 +6,20 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Slotalk',
+  title: 'Sloscribe',
   tagline: 'A Swaggo inspired tool to bring SLO/SLIs closer to Developers 🤞',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://slotalk.fadey.io',
+  url: 'https://sloscribe.fadey.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'tfadeyi', // Usually your GitHub org/user name.
-  projectName: 'slotalk', // Usually your repo name.
+  organizationName: 'slosive', // Usually your GitHub org/user name.
+  projectName: 'sloscribe', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -42,14 +42,14 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/tfadeyi/slotalk-website/tree/main/',
+            'https://github.com/slosive/sloscribe-website/tree/main/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/tfadeyi/slotalk-website/tree/main/',
+            'https://github.com/slosive/website/tree/main/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -62,9 +62,9 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/slotalk_banner.png',
+      image: 'img/sloscribe_banner.png',
       navbar: {
-        title: 'Slotalk',
+        title: 'Sloscribe',
         items: [
           {
             type: 'docSidebar',
@@ -74,7 +74,7 @@ const config = {
           },
           {to: '/blog', label: '📰Blog', position: 'right'},
           {
-            href: 'https://github.com/tfadeyi/slotalk',
+            href: 'https://github.com/slosive/sloscribe',
             label: 'GitHub',
             position: 'right',
           },
@@ -101,12 +101,12 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/tfadeyi/slotalk-website',
+                href: 'https://github.com/slosive/sloscribe',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Slotalk, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Sloscribe, Inc. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
